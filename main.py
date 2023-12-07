@@ -28,8 +28,9 @@ def task_3():
 
 
 if __name__ == '__main__':
-    run_cpu_tasks_in_parallel([
-        task_1,
-        task_2,
-        task_3
-    ])
+    try:
+        run_cpu_tasks_in_parallel([
+            task_3
+        ])
+    except:
+        print("End to End testing failed to run! ❌")

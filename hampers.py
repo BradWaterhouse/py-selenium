@@ -1,13 +1,22 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 import time
 
 
 def order():
-    driver = webdriver.Firefox()
-    driver.set_window_position(-270, 400)
+    options = Options()
+    prefs = {"profile.managed_default_content_settings.images": 2}
+    options.add_experimental_option("prefs", prefs)
+
+    driver = webdriver.Chrome(options=options)
+
+    wait = WebDriverWait(driver, 10)
+
+    driver.set_window_position(2000, 0)
     driver.set_window_size(1100, 1200)
+
     driver.get("https://www.bunches.co.uk/hamper-delivery")
 
     print("Bunches hamper home page loaded 💐")
