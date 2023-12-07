@@ -3,9 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from concurrent.futures import ProcessPoolExecutor
 import time
-import flowers
-import hampers
-import cards
+from Chrome import cards, hampers, flowers
 
 
 def run_cpu_tasks_in_parallel(tasks):
@@ -30,6 +28,8 @@ def task_3():
 if __name__ == '__main__':
     try:
         run_cpu_tasks_in_parallel([
+            task_1,
+            task_2,
             task_3
         ])
     except:
