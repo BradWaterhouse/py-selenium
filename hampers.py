@@ -1,104 +1,124 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
-import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 
 
 def order():
     options = Options()
     prefs = {"profile.managed_default_content_settings.images": 2}
     options.add_experimental_option("prefs", prefs)
+    options.add_argument("--headless")
+    options.add_argument("--window-size=1920,1080")
 
     driver = webdriver.Chrome(options=options)
-
     wait = WebDriverWait(driver, 10)
-
-    driver.set_window_position(2000, 0)
-    driver.set_window_size(1100, 1200)
+    #
+    # driver.set_window_position(2000, 0)
+    # driver.set_window_size(1100, 1200)
 
     driver.get("https://www.bunches.co.uk/hamper-delivery")
 
     print("Bunches hamper home page loaded 💐")
 
-    time.sleep(10)
-
-    product = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/section[2]/div[1]/div/a/img')
+    product_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/section[2]/div[1]/div/a/img')
+    product = wait.until(EC.element_to_be_clickable(product_locator))
     product.click()
     print("Hamper - Product Selected ✅")
-    time.sleep(1)
 
-    postcode_check = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/div[2]/div/form/div/div[1]/input')
+    postcode_check_locator = (By.XPATH, '//html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/form/div/input')
+    postcode_check = wait.until(EC.element_to_be_clickable(postcode_check_locator))
     postcode_check.send_keys('NG15 0DQ')
-    check_postcode_button = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/div[2]/div/form/div/div[2]/button')
+
+    check_postcode_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/form/div/div/button')
+    check_postcode_button = wait.until(EC.element_to_be_clickable(check_postcode_button_locator))
     check_postcode_button.click()
     print("Hamper - Postcode checked  ✅")
-    time.sleep(0.5)
 
-
-    place_order_button = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/div[2]/button')
+    place_order_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/button')
+    place_order_button = wait.until(EC.element_to_be_clickable(place_order_button_locator))
     place_order_button.click()
-    time.sleep(1)
     print("Hamper - Place order button pressed ✅")
 
-    message = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[1]/section/div[1]/div[1]/div[2]/div[3]/div[2]/div/div/textarea')
+    message_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[1]/section/div[1]/div[1]/div[2]/div[3]/div[2]/div/div/textarea')
+    message = wait.until(EC.element_to_be_clickable(message_locator))
     message.click()
     message.send_keys('hello world')
-    continue_button = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[1]/section/div[3]/button')
+
+    continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[1]/section/div[3]/button')
+    continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
     print("Hamper - Message added ✅")
 
-    checkout_as_guest_button = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/button[2]')
+    checkout_as_guest_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/button[2]')
+    checkout_as_guest_button = wait.until(EC.element_to_be_clickable(checkout_as_guest_button_locator))
     checkout_as_guest_button.click()
 
-    time.sleep(0.5)
-
-    email_input = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[1]/input')
+    email_input_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[1]/input')
+    email_input = wait.until(EC.element_to_be_clickable(email_input_locator))
     email_input.send_keys('bot@test.com')
-    name_input = driver.find_element(By.XPATH,
-                                     '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[2]/input')
+
+    name_input_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[2]/input')
+    name_input = wait.until(EC.element_to_be_clickable(name_input_locator))
     name_input.send_keys('I am not a bot, I promise')
-    telephone_input = driver.find_element(By.XPATH,
-                                         '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[3]/input')
+
+    telephone_input_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[3]/input')
+    telephone_input = wait.until(EC.element_to_be_clickable(telephone_input_locator))
     telephone_input.send_keys('123456789')
-    continue_button = driver.find_element(By.XPATH,
-                                          '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[5]/button')
+
+    continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[5]/button')
+    continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
     print("Hamper - Guess account name + email filled in ✅")
 
-    time.sleep(0.5)
-
-    recipient_name_input = driver.find_element(By.XPATH,
-                                               '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[1]/input')
+    recipient_name_input_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[1]/input')
+    recipient_name_input = wait.until(EC.element_to_be_clickable(recipient_name_input_locator))
     recipient_name_input.send_keys('Mr Bottington Bot')
-    manual_address_button = driver.find_element(By.XPATH,
-                                                '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[2]/a')
+
+    manual_address_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[2]/a')
+    manual_address_button = wait.until(EC.element_to_be_clickable(manual_address_button_locator))
     manual_address_button.click()
 
-    address_line_1 = driver.find_element(By.XPATH,
-                                         '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[2]/input')
-    address_line_1.send_keys('25 Bot Street')
-    address_line_2 = driver.find_element(By.XPATH,
-                                         '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[3]/input')
-    address_line_2.send_keys('Bot Road')
-    address_postcode = driver.find_element(By.XPATH,
-                                           '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[6]/input')
-    time.sleep(1)
+    address_postcode_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[6]/input')
+    address_postcode = wait.until(EC.element_to_be_clickable(address_postcode_locator))
     address_postcode.send_keys('NG15 0DQ')
 
-    update_button = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/button')
+    address_line_1_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[2]/input')
+    address_line_1 = wait.until(EC.element_to_be_clickable(address_line_1_locator))
+    address_line_1.send_keys('25 Bot Street')
+
+    address_line_2_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[3]/input')
+    address_line_2 = wait.until(EC.element_to_be_clickable(address_line_2_locator))
+    address_line_2.send_keys('Bot Road')
+
+    address_line_3_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[4]/input')
+    address_line_3 = wait.until(EC.element_to_be_clickable(address_line_3_locator))
+    address_line_3.send_keys('Bot Town')
+
+    town_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[5]/input')
+    town = wait.until(EC.element_to_be_clickable(town_locator))
+    town.send_keys('Bot Town')
+
+    update_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/button')
+    update_button = wait.until(EC.element_to_be_clickable(update_button_locator))
     update_button.click()
 
-    continue_button = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/div/button')
+    continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/div/button')
+    continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
     print("Hamper - Recipient address entered ✅")
 
-    proceed_to_payment_button = driver.find_element(By.XPATH,
-                                                    '/html/body/div[1]/div[1]/main/div[3]/section[4]/div/div[2]/span/button')
+    proceed_to_payment_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[4]/div/div[2]/span/button')
+    proceed_to_payment_button = wait.until(EC.element_to_be_clickable(proceed_to_payment_button_locator))
     proceed_to_payment_button.click()
 
     print("Hamper - Proceeded to payment page ✅")
 
-    time.sleep(4)
-
     driver.close()
+
+
+if __name__ == '__main__':
+    order()

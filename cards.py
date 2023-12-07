@@ -8,18 +8,19 @@ def order():
     options = webdriver.ChromeOptions()
     prefs = {"profile.managed_default_content_settings.images": 2}
     options.add_experimental_option("prefs", prefs)
+    options.add_argument("--headless")
+    options.add_argument("--window-size=1920,1080")
 
     driver = webdriver.Chrome(options=options)
     wait = WebDriverWait(driver, 10)
 
-    driver.set_window_position(2000, 0)
-    driver.set_window_size(1100, 1200)
+    # driver.set_window_position(2000, 0)
+    # driver.set_window_size(1100, 1200)
 
     driver.get("https://www.bunches.co.uk/category/birthday-cards")
 
     print("Bunches card home page loaded 💐")
 
-    # Replace time.sleep with WebDriverWait for an element to be present
     product_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[5]/div[2]/div/a')
     product = wait.until(EC.presence_of_element_located(product_locator))
     product.click()
