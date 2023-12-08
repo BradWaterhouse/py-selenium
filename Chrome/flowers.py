@@ -36,7 +36,7 @@ def order():
     product_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/section[2]/div[1]/div/a/img')
     product = wait.until(EC.element_to_be_clickable(product_locator))
     product.click()
-    print("Flowers - Product Selected ✅")
+    print("Flowers (Chrome) - Product Selected ✅")
 
     continue_button_locator = (By.CSS_SELECTOR, '.bn-button--lg.bn-button.bn-button--primary')
     if click_element_if_present(driver, continue_button_locator):
@@ -47,12 +47,12 @@ def order():
     place_order_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[4]/div[2]/button')
     place_order_button = wait.until(EC.element_to_be_clickable(place_order_button_locator))
     place_order_button.click()
-    print("Flowers - Place order button pressed ✅")
+    print("Flowers (Chrome) - Place order button pressed ✅")
 
     skip_button_locator = (By.XPATH, '//*[@id="extras"]/div/div[3]/button')
     skip_button = wait.until(EC.element_to_be_clickable(skip_button_locator))
     skip_button.click()
-    print("Flowers - Extras Skipped ✅")
+    print("Flowers (Chrome) - Extras Skipped ✅")
 
     card_select_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/button')
     card_select = wait.until(EC.element_to_be_clickable(card_select_locator))
@@ -61,7 +61,7 @@ def order():
     free_card_locator = (By.XPATH, '/html/body/dialog/div/div/div[2]/div[3]/span/button')
     free_card = wait.until(EC.element_to_be_clickable(free_card_locator))
     free_card.click()
-    print("Flowers - Default Card Selected ✅")
+    print("Flowers (Chrome) - Default Card Selected ✅")
 
     message_locator = (By.XPATH, '//*[@id="message"]/section/div[1]/div[1]/div[2]/div[3]/div[2]/div/div/div')
     message = wait.until(EC.element_to_be_clickable(message_locator))
@@ -71,7 +71,7 @@ def order():
     continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/section/div[4]/button[2]')
     continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
-    print("Flowers - Message added ✅")
+    print("Flowers (Chrome) - Message added ✅")
 
     checkout_as_guest_button_locator = (By.XPATH, '//*[@id="details"]/div/div[2]/form/button[2]')
     checkout_as_guest_button = wait.until(EC.element_to_be_clickable(checkout_as_guest_button_locator))
@@ -92,7 +92,7 @@ def order():
     continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[4]/div/div[2]/form/div[5]/button')
     continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
-    print("Flowers - Guess account name + email filled in ✅")
+    print("Flowers (Chrome) - Guess account name + email filled in ✅")
 
     recipient_name_input_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[5]/div/form/div/div[1]/input')
     recipient_name_input = wait.until(EC.element_to_be_clickable(recipient_name_input_locator))
@@ -129,13 +129,13 @@ def order():
     continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[5]/div/div/button')
     continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
-    print("Flowers - Recipient address entered ✅")
+    print("Flowers (Chrome) - Recipient address entered ✅")
 
     proceed_to_payment_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[6]/div/div[2]/span/button')
     proceed_to_payment_button = wait.until(EC.element_to_be_clickable(proceed_to_payment_button_locator))
     proceed_to_payment_button.click()
 
-    print("Flowers - Proceeded to payment page ✅")
+    print("Flowers (Chrome) - Proceeded to payment page ✅")
 
     driver.quit()
 

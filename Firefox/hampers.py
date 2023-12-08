@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 def order():
     options = webdriver.FirefoxOptions()
     options.headless = True
+    options.add_argument("--headless")
 
     driver = webdriver.Firefox(options=options)
     wait = WebDriverWait(driver, 10)
@@ -19,7 +20,7 @@ def order():
     product_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/section[2]/div[1]/div/a/img')
     product = wait.until(EC.element_to_be_clickable(product_locator))
     product.click()
-    print("Hamper - Product Selected ✅")
+    print("Hamper (Firefox) - Product Selected ✅")
 
     postcode_check_locator = (By.XPATH, '//html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/form/div/input')
     postcode_check = wait.until(EC.element_to_be_clickable(postcode_check_locator))
@@ -28,12 +29,12 @@ def order():
     check_postcode_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/form/div/div/button')
     check_postcode_button = wait.until(EC.element_to_be_clickable(check_postcode_button_locator))
     check_postcode_button.click()
-    print("Hamper - Postcode checked  ✅")
+    print("Hamper (Firefox) - Postcode checked  ✅")
 
     place_order_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[2]/div[2]/section[2]/div[3]/div[2]/button')
     place_order_button = wait.until(EC.element_to_be_clickable(place_order_button_locator))
     place_order_button.click()
-    print("Hamper - Place order button pressed ✅")
+    print("Hamper (Firefox) - Place order button pressed ✅")
 
     message_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[1]/section/div[1]/div[1]/div[2]/div[3]/div[2]/div/div/textarea')
     message = wait.until(EC.element_to_be_clickable(message_locator))
@@ -43,7 +44,7 @@ def order():
     continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[1]/section/div[3]/button')
     continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
-    print("Hamper - Message added ✅")
+    print("Hamper (Firefox) - Message added ✅")
 
     checkout_as_guest_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/button[2]')
     checkout_as_guest_button = wait.until(EC.element_to_be_clickable(checkout_as_guest_button_locator))
@@ -64,7 +65,7 @@ def order():
     continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[2]/div/div[2]/form/div[5]/button')
     continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
-    print("Hamper - Guess account name + email filled in ✅")
+    print("Hamper (Firefox) - Guess account name + email filled in ✅")
 
     recipient_name_input_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[1]/input')
     recipient_name_input = wait.until(EC.element_to_be_clickable(recipient_name_input_locator))
@@ -101,13 +102,13 @@ def order():
     continue_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/div/button')
     continue_button = wait.until(EC.element_to_be_clickable(continue_button_locator))
     continue_button.click()
-    print("Hamper - Recipient address entered ✅")
+    print("Hamper (Firefox) - Recipient address entered ✅")
 
     proceed_to_payment_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[4]/div/div[2]/span/button')
     proceed_to_payment_button = wait.until(EC.element_to_be_clickable(proceed_to_payment_button_locator))
     proceed_to_payment_button.click()
 
-    print("Hamper - Proceeded to payment page ✅")
+    print("Hamper (Firefox) - Proceeded to payment page ✅")
 
     driver.quit()
 
