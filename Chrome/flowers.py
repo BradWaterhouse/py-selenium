@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
+from colorama import Fore, Style
+import time
 
 
 def click_element_if_present(driver, locator):
@@ -122,6 +124,8 @@ def order():
     address_town = wait.until(EC.element_to_be_clickable(address_town_locator))
     address_town.send_keys('Bot Town 2')
 
+    time.sleep(2)
+
     update_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[5]/div/form/button')
     update_button = wait.until(EC.element_to_be_clickable(update_button_locator))
     update_button.click()
@@ -135,7 +139,8 @@ def order():
     proceed_to_payment_button = wait.until(EC.element_to_be_clickable(proceed_to_payment_button_locator))
     proceed_to_payment_button.click()
 
-    print("Flowers (Chrome) - Proceeded to payment page ✅")
+    # print("Flowers (Chrome) - Proceeded to payment page ✅")
+    print(f"{Fore.GREEN}Flowers (Chrome) - Proceeded to payment page {Fore.GREEN}✅{Style.RESET_ALL}")
 
     driver.quit()
 
