@@ -82,6 +82,14 @@ def order():
     address_line_2 = wait.until(EC.element_to_be_clickable(address_line_2_locator))
     address_line_2.send_keys('Bot Road')
 
+    address_line_3_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[4]/input')
+    address_line_3 = wait.until(EC.element_to_be_clickable(address_line_3_locator))
+    address_line_3.send_keys('Bot Town')
+
+    address_town_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/div/div[5]/input')
+    address_town = wait.until(EC.element_to_be_clickable(address_town_locator))
+    address_town.send_keys('Bot Town 2')
+
     update_button_locator = (By.XPATH, '/html/body/div[1]/div[1]/main/div[3]/section[3]/div/form/button')
     update_button = wait.until(EC.element_to_be_clickable(update_button_locator))
     update_button.click()

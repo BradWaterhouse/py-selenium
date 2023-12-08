@@ -6787,3 +6787,144 @@ Exiting due to channel error.
 ###!!! [Child][MessageChannel] Error: (msgtype=0x5D0006,name=PIdleScheduler::Msg_Schedule) Channel error: cannot send/recv
 
 Exiting due to channel error.
+1702026085612	geckodriver	INFO	Listening on 127.0.0.1:63097
+1702026085612	geckodriver	INFO	Listening on 127.0.0.1:63099
+1702026085619	geckodriver	INFO	Listening on 127.0.0.1:63101
+1702026085628	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofileuwTL6O"
+1702026085628	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofile6ptvXy"
+1702026085628	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofile3xSIMR"
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+1702026086018	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026086026	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026086027	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026086352	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026086352	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026086352	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026086352	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026086354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026086354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026086354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026086354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026086367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026086367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026086367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026086367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026089803	Marionette	INFO	Listening on port 63124
+1702026089813	Marionette	INFO	Listening on port 63120
+1702026089834	Marionette	INFO	Listening on port 63121
+1702026089869	Marionette	WARN	TLS certificate errors will be ignored for this session
+1702026089876	Marionette	WARN	TLS certificate errors will be ignored for this session
+1702026089879	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+1702026249584	geckodriver	INFO	Listening on 127.0.0.1:64661
+1702026249584	geckodriver	INFO	Listening on 127.0.0.1:64663
+1702026249584	geckodriver	INFO	Listening on 127.0.0.1:64660
+1702026249597	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofilekYhaxj"
+*** You are running in headless mode.
+1702026249912	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026250095	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofileQPpz2E"
+1702026250095	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofilei30W1f"
+*** You are running in headless mode.
+*** You are running in headless mode.
+1702026250159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026250159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026250159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026250159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026250494	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026250496	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026251031	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026251032	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026251051	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026251051	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026251052	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026251053	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026251072	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026251072	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026253366	Marionette	INFO	Listening on port 64682
+1702026253442	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+1702026254696	Marionette	INFO	Listening on port 64700
+1702026254739	Marionette	WARN	TLS certificate errors will be ignored for this session
+1702026254868	Marionette	INFO	Listening on port 64701
+1702026254958	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+1702026472899	geckodriver	INFO	Listening on 127.0.0.1:50276
+1702026472899	geckodriver	INFO	Listening on 127.0.0.1:50280
+1702026472899	geckodriver	INFO	Listening on 127.0.0.1:50278
+1702026472921	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofile93ehnJ"
+1702026472921	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofile5kmWMJ"
+1702026472921	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofile3LmlDH"
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+1702026473310	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026473319	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026473321	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026474407	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026474408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026474408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026474408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026474410	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026474410	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026474411	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026474411	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026474414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026474414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026474414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026474414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
+1702026477940	Marionette	INFO	Listening on port 50305
+1702026477956	Marionette	INFO	Listening on port 50307
+1702026478000	Marionette	WARN	TLS certificate errors will be ignored for this session
+1702026478005	Marionette	WARN	TLS certificate errors will be ignored for this session
+1702026478057	Marionette	INFO	Listening on port 50306
+1702026478136	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
+1702026715858	geckodriver	INFO	Listening on 127.0.0.1:52377
+1702026715858	geckodriver	INFO	Listening on 127.0.0.1:52373
+1702026715858	geckodriver	INFO	Listening on 127.0.0.1:52375
+1702026715878	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofileK5caK7"
+1702026715878	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofileraR2VT"
+1702026715878	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/kx/31prc6r52p34w48q3ffmhhgw0000gn/T/rust_mozprofilebaJXqv"
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+1702026716288	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026716290	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026716300	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1702026717412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026717412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026717412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026717412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026717414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026717414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026717414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026717414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026717415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1702026717415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1702026717415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1702026717415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1702026720719	Marionette	INFO	Listening on port 52391
+1702026720822	Marionette	WARN	TLS certificate errors will be ignored for this session
+1702026720860	Marionette	INFO	Listening on port 52392
+1702026720869	Marionette	INFO	Listening on port 52393
+1702026720957	Marionette	WARN	TLS certificate errors will be ignored for this session
+1702026720965	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+JavaScript error: https://www.bunches.co.uk/main.cc64f1331813c942a7bf.min.js, line 2: SyntaxError: expected expression, got '.'
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
+[GFX1-]: Unrecognized feature VIDEO_OVERLAY
