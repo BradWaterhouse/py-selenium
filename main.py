@@ -39,6 +39,7 @@ def task_6():
 
 
 if __name__ == '__main__':
+    try:
         run_cpu_tasks_in_parallel([
             task_1,
             task_2,
@@ -47,3 +48,5 @@ if __name__ == '__main__':
             task_5,
             task_6
         ])
+    except:
+        print("End to End testing failed to run! ❌")
