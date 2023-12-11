@@ -15,7 +15,7 @@ def click_element_if_present(driver, locator):
         return False
 
 
-def order():
+def order(url):
     options = webdriver.FirefoxOptions()
     options.headless = True
     options.add_argument("--headless")
@@ -23,7 +23,7 @@ def order():
     driver = webdriver.Firefox(options=options)
     wait = WebDriverWait(driver, 10)
 
-    driver.get("https://www.bunches.co.uk")
+    driver.get('https://' + url)
 
     print("Bunches home page loaded 💐")
 

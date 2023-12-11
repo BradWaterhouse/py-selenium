@@ -7,7 +7,7 @@ from colorama import Fore, Style
 import time
 
 
-def order():
+def order(url):
     options = webdriver.FirefoxOptions()
     options.headless = True
     options.add_argument("--headless")
@@ -15,7 +15,7 @@ def order():
     driver = webdriver.Firefox(options=options)
     wait = WebDriverWait(driver, 10)
 
-    driver.get("https://www.bunches.co.uk/hamper-delivery")
+    driver.get('https://' + url + "/hamper-delivery")
 
     print("Bunches hamper home page loaded 💐")
 

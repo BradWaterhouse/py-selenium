@@ -6,7 +6,7 @@ from colorama import Fore, Style
 import time
 
 
-def order():
+def order(url):
     options = webdriver.ChromeOptions()
     prefs = {"profile.managed_default_content_settings.images": 2}
     options.add_experimental_option("prefs", prefs)
@@ -19,7 +19,7 @@ def order():
     # driver.set_window_position(2000, 0)
     # driver.set_window_size(1100, 1200)
 
-    driver.get("https://www.bunches.co.uk/category/birthday-cards")
+    driver.get('https://' + url + "/category/birthday-cards")
 
     print("Bunches card home page loaded 💐")
 

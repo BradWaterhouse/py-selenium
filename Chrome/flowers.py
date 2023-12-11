@@ -16,7 +16,7 @@ def click_element_if_present(driver, locator):
         return False
 
 
-def order():
+def order(url):
     service = Service()
     options = webdriver.ChromeOptions()
 
@@ -31,7 +31,9 @@ def order():
     # driver.set_window_position(2000, 0)
     # driver.set_window_size(1100, 1200)
 
-    driver.get("https://www.bunches.co.uk")
+    print(url)
+
+    driver.get('https://' + url)
 
     print("Bunches home page loaded 💐")
 

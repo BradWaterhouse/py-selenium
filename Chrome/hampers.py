@@ -9,7 +9,7 @@ from colorama import Fore, Style
 import time
 
 
-def order():
+def order(url):
     options = Options()
     prefs = {"profile.managed_default_content_settings.images": 2}
 
@@ -23,7 +23,7 @@ def order():
     # driver.set_window_position(2000, 0)
     # driver.set_window_size(1100, 1200)
 
-    driver.get("https://www.bunches.co.uk/hamper-delivery")
+    driver.get('https://' + url + "/hamper-delivery")
 
     print("Bunches hamper home page loaded 💐")
 
