@@ -36,7 +36,7 @@ def task_6(url):
 
 if __name__ == '__main__':
     try:
-        url = input("Enter the URL for testing: ")
+        url = input("Enter the URL for testing (do not include https://): ")
         run_cpu_tasks_in_parallel([
             task_1,
             task_2,
